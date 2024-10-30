@@ -7,7 +7,7 @@ const GlobalStyle = createGlobalStyle`
         padding: 0;
         font-family: "varela round", sans serif; 
         color: #000000;
-        background-color: #FAF9FB;
+        background-color: #F9F9F9;
     }
 `
 
