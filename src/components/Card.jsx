@@ -1,11 +1,13 @@
 import styled from "styled-components";
 import PropTypes from "prop-types";
+import Logo from "./LogoTechno";
 
 
 const CardLink = styled.a`
     display: flex;
     width: 250px;
     height: 300px;
+    text-decoration: none;
 `
 const CardContainer = styled.div`
     display: flex;
@@ -22,11 +24,11 @@ const CardContainer = styled.div`
         transform: scale(1.01);
         box-shadow: 3px 3px 16px 9px rgba(0, 0, 0, 0.1);
     }
-    &:hover > .card-content {
-        margin-bottom: 0;
-    }
     &:hover > .card-img {
         border-radius: 15px 15px 0 0;
+    }
+    &:hover > .card-content {
+        margin-bottom: 0;
     }
 `
 const CardImg = styled.img`
@@ -36,21 +38,24 @@ const CardImg = styled.img`
     object-fit: cover;
 `
 const CardContent = styled.div`
-    margin-bottom: -90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
     width: 100%;
     height: 30%;
+    margin-bottom: -90px;
     background-color: #FFFFFF;
     border-radius: 0 0 15px 15px;
     transition: margin-bottom 200ms ease-in;
 `
-
-function CardAlone ({ href, source, alt }) {
+function CardAlone ({ href, source, alt, className }) {
     return (
         <CardLink href={href} target="_blank">
             <CardContainer>
                 <CardImg src={source} alt={alt} className="card-img" />
                 <CardContent className="card-content">
-                    
+                    <Logo className={className}/>
                 </CardContent>
             </CardContainer>
         </CardLink>    
@@ -60,7 +65,8 @@ function CardAlone ({ href, source, alt }) {
 CardAlone.propTypes = {
     href: PropTypes.string,
     source: PropTypes.string,
-    alt: PropTypes.string
+    alt: PropTypes.string,
+    className: PropTypes.string
 };
 
 export default CardAlone;
