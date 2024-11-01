@@ -19,43 +19,46 @@ const CardContainer = styled.div`
     background-color: #FFFFFF;
     border-radius: 15px;
     box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.1);
-    transition: transform 200ms ease-in, box-shadow 200ms ease-in;
+    transition: transform 175ms ease-out, box-shadow 175ms ease-out;
     &:hover {
         transform: scale(1.01);
         box-shadow: 3px 3px 16px 9px rgba(0, 0, 0, 0.1);
     }
-    &:hover > .card-img {
-        border-radius: 15px 15px 0 0;
-    }
     &:hover > .card-content {
-        margin-bottom: 0;
+        top: 210px;
     }
 `
 const CardImg = styled.img`
+    position: absolute;
     width: 100%;
     height: 100%;
     border-radius: 15px;
     object-fit: cover;
 `
 const CardContent = styled.div`
+    position: relative;
+    z-index: 3;
+    top: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
     width: 100%;
     height: 30%;
-    margin-bottom: -90px;
     background-color: #FFFFFF;
     border-radius: 0 0 15px 15px;
-    transition: margin-bottom 200ms ease-in;
+    transition: top 175ms ease-out;
 `
-function CardAlone ({ href, source, alt, className }) {
+
+function CardAlone ({ projet }) {
     return (
-        <CardLink href={href} target="_blank">
+        <CardLink href={projet.link} target="_blank">
             <CardContainer>
-                <CardImg src={source} alt={alt} className="card-img" />
+                <CardImg src={projet.picture} alt={projet.name}/>
                 <CardContent className="card-content">
-                    <Logo className={className}/>
+                    {projet.technos.map((techno, index) => (
+                        <Logo key={index} className={techno}/>
+                    ))}
                 </CardContent>
             </CardContainer>
         </CardLink>    
@@ -63,10 +66,12 @@ function CardAlone ({ href, source, alt, className }) {
 };
 
 CardAlone.propTypes = {
-    href: PropTypes.string,
-    source: PropTypes.string,
-    alt: PropTypes.string,
-    className: PropTypes.string
+    projet: PropTypes.shape({
+        link: PropTypes.string,
+        picture: PropTypes.string,
+        name: PropTypes.string,
+        technos: PropTypes.arrayOf(PropTypes.string)
+    })
 };
 
 export default CardAlone;

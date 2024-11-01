@@ -1,0 +1,34 @@
+{
+    "projets": [
+        {
+            "id": 1,
+            "name": "Shaperz",
+            "link": "https://github.com/Iskandar835/Shaperz",
+            "picture": "./src/assets/shaperz.png",
+            "technos": [
+                "fa-brands fa-html5", 
+                "fa-brands fa-sass", 
+                "fa-brands fa-js"
+            ]
+        },
+        {
+            "id":2,
+            "name": "Argent Bank",
+            "link": "https://github.com/Iskandar835/Argent-Bank-",
+            "picture": "./src/assets/test.png",
+            "technos": [
+                "fa-brands fa-react",
+                "fa-solid fa-recycle"
+            ]
+        },
+        {
+            "id":3,
+            "name": "kasa",
+            "link": "https://github.com/Iskandar835/Kasa",
+            "picture": "./src/assets/kasa.png",
+            "technos": [
+                "fa-brands fa-react"
+            ]
+        }
+    ]
+}

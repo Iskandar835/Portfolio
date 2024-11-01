@@ -1,5 +1,6 @@
 import Header from "../components/PageStructure/Header";
 import BannerContact from "../components/PageStructure/BannerContact";
+import CardsSection from "../components/PageStructure/CardsSection";
 
 
 function HomePage () {
@@ -8,6 +9,7 @@ function HomePage () {
             <Header />
             <main>
                 <BannerContact />
+                <CardsSection/>
             </main>
         </>
     )
