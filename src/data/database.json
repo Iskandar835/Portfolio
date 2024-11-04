@@ -6,7 +6,6 @@
             "link": "https://github.com/Iskandar835/Shaperz",
             "picture": "./src/assets/shaperz.png",
             "technos": [
-                "fa-brands fa-html5", 
                 "fa-brands fa-sass", 
                 "fa-brands fa-js"
             ]
@@ -17,6 +16,7 @@
             "link": "https://github.com/Iskandar835/Argent-Bank-",
             "picture": "./src/assets/test.png",
             "technos": [
+                "fa-brands fa-css3",
                 "fa-brands fa-react",
                 "fa-solid fa-recycle"
             ]
@@ -27,6 +27,7 @@
             "link": "https://github.com/Iskandar835/Kasa",
             "picture": "./src/assets/kasa.png",
             "technos": [
+                "fa-brands fa-css3",
                 "fa-brands fa-react"
             ]
         }

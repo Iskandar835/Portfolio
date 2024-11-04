@@ -12,7 +12,7 @@ const TitleDiv = styled.div`
     margin: 0 0 60px 0;
     text-align: center;
 `
-const Title = styled.h1`
+export const Title = styled.h1`
     margin: 0;
     font-family: "Haniman", sans-serif;
     font-size: 45px;

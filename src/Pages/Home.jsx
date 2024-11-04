@@ -1,6 +1,7 @@
 import Header from "../components/PageStructure/Header";
 import BannerContact from "../components/PageStructure/BannerContact";
 import CardsSection from "../components/PageStructure/CardsSection";
+import SkillsSection from "../components/PageStructure/SkillsSection";
 
 
 function HomePage () {
@@ -9,7 +10,8 @@ function HomePage () {
             <Header />
             <main>
                 <BannerContact />
-                <CardsSection/>
+                <CardsSection />
+                <SkillsSection />
             </main>
         </>
     )
