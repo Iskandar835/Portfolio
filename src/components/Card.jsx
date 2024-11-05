@@ -5,7 +5,7 @@ import Logo from "./LogoTechno";
 
 const CardLink = styled.a`
     display: flex;
-    width: 280px;
+    width: 30%;
     height: 300px;
     text-decoration: none;
 `
@@ -13,7 +13,7 @@ const CardContainer = styled.div`
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 280px;
+    width: 100%;
     height: 300px;
     overflow: hidden; 
     background-color: #FFFFFF;
@@ -45,7 +45,7 @@ const CardContent = styled.div`
     gap: 20px;
     width: 100%;
     height: 30%;
-    background-color: #6E6E73;
+    background-color: ##6e6e7300;
     border-radius: 0 0 15px 15px;
     transition: top 175ms ease-out;
 `

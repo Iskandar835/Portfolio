@@ -20,7 +20,7 @@ const TitleDiv = styled.div`
 `
 const Title = styled.h1`
     margin: 0;
-    font-family: "Haniman", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 45px;
 `
 const SubtitleDiv = styled.div`

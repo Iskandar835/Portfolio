@@ -1,6 +1,6 @@
 import Header from "../components/PageStructure/Header";
 import BannerContact from "../components/PageStructure/BannerContact";
-import CardsSection from "../components/PageStructure/CardsSection";
+import Projects from "../components/PageStructure/Projects";
 import SkillsSection from "../components/PageStructure/SkillsSection";
 import AboutMe from "../components/PageStructure/AboutMe";
 
@@ -11,7 +11,7 @@ function HomePage () {
             <Header />
             <main>
                 <BannerContact />
-                <CardsSection />
+                <Projects />
                 <AboutMe />
                 <SkillsSection />
             </main>

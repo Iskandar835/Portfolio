@@ -32,13 +32,12 @@
         },
         {
             "id":2,
-            "name": "Argent Bank",
-            "link": "https://github.com/Iskandar835/Argent-Bank-",
-            "picture": "./src/assets/test-laptop.png",
+            "name": "Oh My Food ",
+            "link": "https://github.com/Iskandar835/Oh-My-Food",
+            "picture": "./src/assets/iphone-ohmyfood.png",
             "technos": [
-                "fa-brands fa-css3",
-                "fa-brands fa-react",
-                "fa-solid fa-recycle"
+                "fa-brands fa-html5",
+                "fa-brands fa-sass"
             ]
         },
         {

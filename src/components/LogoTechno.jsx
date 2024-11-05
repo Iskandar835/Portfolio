@@ -10,11 +10,11 @@ const LogoContainer = styled.div`
     height: 45px;
     border: 2px solid #E9C2EC;
     border-radius: 50px;
-    background-color: #6E6E73;
+    background-color: #FFFFFF;
 `
 const IconLogo = styled.i`
     font-size: 20px;
-    color: #FFFFFF;
+    color: #000000;
 `
 
 function Logo ({ className }) {
