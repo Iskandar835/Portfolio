@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Title } from "./BannerContact";
 import Logo from "../LogoTechno";
 
 
@@ -19,7 +18,6 @@ const Paragraph = styled.p`
 function SkillsSection () {
     return (
         <Section>
-            <Title>My Skills</Title>
             <TechnoSkills>
                 <Logo className={"fa-brands fa-css3"}/>
                 <Logo className={"fa-brands fa-js"}/>
