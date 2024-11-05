@@ -14,7 +14,7 @@ const AllCards = styled.div`
     display: flex;
     justify-content: space-between;
 `
-const Titleh2 = styled.h2`
+export const Titleh2 = styled.h2`
     font-family: "Poppins", sans-serif;
     font-size: 65px;
 `

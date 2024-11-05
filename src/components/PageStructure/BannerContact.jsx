@@ -27,7 +27,7 @@ const SubtitleDiv = styled.div`
     width: 40%;
     margin: 80px 0 0 0;
 `
-const Subtitle = styled.p`
+export const Subtitle = styled.p`
     font-size: 20px;
 `
 const ContactContainer = styled.div`
