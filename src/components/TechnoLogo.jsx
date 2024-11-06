@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 
 
-const LogoContainer = styled.div`
+export const LogoContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
