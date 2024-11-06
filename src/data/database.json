@@ -50,5 +50,27 @@
                 "fa-brands fa-react"
             ]
         }
+    ],
+    "skills": [
+        {
+            "id": 1,
+            "source":"./src/assets/logo-html.png",
+            "alt":"Logo HTML"
+        },
+        {
+            "id": 2,
+            "source":"./src/assets/logo-css.png",
+            "alt":"Logo CSS"
+        },
+        {
+            "id": 3,
+            "source":"./src/assets/logo-javascript.jpg",
+            "alt":"Logo javaScript"
+        },
+        {
+            "id": 4,
+            "source":"./src/assets/logo-react.png",
+            "alt":"Logo REACT"
+        }
     ]
 }
