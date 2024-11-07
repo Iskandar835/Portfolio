@@ -5,30 +5,32 @@ import { LogoContainer } from "./TechnoLogo";
 
 const RotateAnimation = keyframes`
     0%{
-      transform: rotate(0deg)
-                 translate(-165px)
-                 rotate(0deg);
+        transform:  rotate(0deg)
+                    translate(-150px)
+                    rotate(0deg);
     
     }
     100%{
-      transform: rotate(360deg)
-                 translate(-165px)
-                 rotate(-360deg);
+        transform:  rotate(360deg)
+                    translate(-150px)
+                    rotate(-360deg);
     }
 `
 const Logo = styled(LogoContainer)`
-    border-radius: 10px;
+    position: absolute;
+    z-index: 2;
+    top: 0; 
+    right: 0;
+    bottom: 0;      
+    left: 0;
+    margin: auto;
     width: 55px;
     height: 55px;
     background-color: #000000;
     border: 4px solid #E9C2EC;
-    position: absolute;
-    top: 0; 
-    bottom: 0;      
-    left: 0;
-    right: 0;
+    border-radius: 10px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.4);
     overflow: hidden;
-    margin: auto;
     animation: ${RotateAnimation} 6s linear infinite;
         &:nth-child(2) { 
             animation-delay: -1.5s; 

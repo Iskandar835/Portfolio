@@ -13,10 +13,21 @@ const Container = styled.div`
     align-items:center;
 `
 const TextContainer = styled.div`
-    width: 40%;
+    width: 50%;
+`
+const Titleth3 = styled.h3`
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+`
+const Titleth4 = styled.h4`
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 35px;
+    font-weight: 600;
 `
 const SkillsContainer = styled.div`
-    width: 60%;
+    width: 50%;
     display: flex;
     justify-content: center;
     margin-bottom: 80px;
@@ -28,9 +39,9 @@ function MySkills () {
             <Titleh2>My <Span>Skills</Span></Titleh2>
             <Container>
                 <TextContainer>
-                    <Subtitle>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, nobis ipsa. Cum, obcaecati quam rem maiores optio quo modi similique.
-                    </Subtitle>
+                    <Titleth3>Lorem ipsum dolor sit amet.</Titleth3>
+                    <Titleth4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde aliquid cum vel doloremque nisi officiis!</Titleth4>
+                    <Subtitle>Lorem ipsum dolor sit amet consectetur adipisicing elit.</Subtitle>
                 </TextContainer>
                 <SkillsContainer>
                     <AllSkills/>
