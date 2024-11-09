@@ -12,7 +12,7 @@ export const LogoContainer = styled.div`
     border-radius: 50px;
     background-color: #FFFFFF;
 `
-const IconLogo = styled.i`
+export const IconLogo = styled.i`
     font-size: 20px;
     color: #000000;
 `

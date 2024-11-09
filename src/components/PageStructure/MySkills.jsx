@@ -20,7 +20,7 @@ const Titleth3 = styled.h3`
     font-size: 25px;
     font-weight: 600;
 `
-const Titleth4 = styled.h4`
+export const Titleh4 = styled.h4`
     margin: 0;
     font-family: "Poppins", sans-serif;
     font-size: 35px;
@@ -40,7 +40,7 @@ function MySkills () {
             <Container>
                 <TextContainer>
                     <Titleth3>Lorem ipsum dolor sit amet.</Titleth3>
-                    <Titleth4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde aliquid cum vel doloremque nisi officiis!</Titleth4>
+                    <Titleh4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde aliquid cum vel doloremque nisi officiis!</Titleh4>
                     <Subtitle>Lorem ipsum dolor sit amet consectetur adipisicing elit.</Subtitle>
                 </TextContainer>
                 <SkillsContainer>

@@ -3,6 +3,7 @@ import BannerContact from "../components/PageStructure/BannerContact";
 import Projects from "../components/PageStructure/Projects";
 import MySkills from "../components/PageStructure/MySkills";
 import AboutMe from "../components/PageStructure/AboutMe";
+import Footer from "../components/PageStructure/Footer";
 
 
 function HomePage () {
@@ -15,6 +16,7 @@ function HomePage () {
                 <AboutMe />
                 <MySkills />
             </main>
+            <Footer />
         </>
     )
 };
