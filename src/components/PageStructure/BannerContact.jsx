@@ -1,55 +1,96 @@
 import styled from "styled-components";
+import { Titleh2 } from "./Projects";
+import { Titleh3 } from "./MySkills";
+import HiderBtn from "../HiderBtn";
 import ContactLogo from "../ContactLogo";
 import Data from "../../data/database.json";
 
 
+export const Span =styled.span`
+    font-weight: bold;
+    color: #E9C2EC;
+`
 const ContactSection = styled.section`
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 200px 0 0 0;
-    padding: 0 50px;
+    padding: 200px 100px 50px 100px;
+    background-color: #6E6E73;
+    background: url("./src/assets/doodle-items.avif");
 `
-const ParagraphContainer = styled.div`
+const Overlay = styled.div`
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6); 
+    backdrop-filter: blur(2px);
+`
+const TextAndBtn = styled.div`
+    position: relative;
+    z-index: 2;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    gap: 400px;
     margin: 0 0 70px 0;
 `
-const TitleDiv = styled.div`
-    margin: 0 0 60px 0;
+const TextContainer = styled.div`
+    width: 60%;
 `
 const Title = styled.h1`
     margin: 0;
     font-family: "Poppins", sans-serif;
     font-size: 45px;
 `
-const SubtitleDiv = styled.div`
-    width: 40%;
-    margin: 80px 0 0 0;
+const SecondTitle = styled(Titleh2)`
+    margin: 0;
 `
 export const Subtitle = styled.p`
     font-size: 20px;
 `
+const BtnContainer = styled.div`
+
+`
 const ContactContainer = styled.div`
     display: flex;
-    gap: 100px;
-`
-export const Span =styled.span`
-    font-weight: bold;
-    color: #E9C2EC;
+    position: relative;
+    z-index: 2;
+    gap: 80px;
+    background-color: #FFFFFF;
+    padding: 18px 25px;
+    border-radius: 50px;
+    box-shadow: 0px 1px 10px 8px #00000038;
 `
 
 function BannerContact () {
     return (
         <ContactSection>
-            <ParagraphContainer>
-                <TitleDiv>
-                    <Title>Moi c&apos;est Sacha,<div>developpeur <Span>frontend</Span></div></Title>
-                </TitleDiv>
-                <SubtitleDiv>
-                    <Subtitle>Tu trouveras juste ci-dessous le moyen de me <Span>contacter</Span>, ainsi que certains de mes <Span>projets</Span>. Bon visionnage !</Subtitle>
-                </SubtitleDiv>
-            </ParagraphContainer>
+            <Overlay/>
+            <TextAndBtn>
+                <TextContainer>
+                    <Title>Sacha Vandermoeten</Title>
+                    <SecondTitle>Developpeur <Span>Frontend</Span></SecondTitle>
+                        <Subtitle> 
+                            Passionné par le développement web, je crée des applications modernes 
+                            et performantes avec les technologies les plus adaptées. Curieux et 
+                            toujours en veille, je maîtrise HTML, CSS, JavaScript, et possède une 
+                            solide expérience avec React.js pour des interfaces interactives et 
+                            optimisées. Mon approche privilégie dynamisme, optimisation et maintenabilité 
+                            du code, et je cherche constamment à affiner mes compétences et enrichir mon 
+                            expertise. Tu trouveras juste ci-dessous le moyen de me <Span>contacter</Span>, 
+                            ainsi que certains de mes <Span>projets</Span>. Bon visionnage !
+                        </Subtitle>
+                    <Titleh3>
+                        Mes contacts se trouve &quot;derriere&quot; le boutton .....
+                    </Titleh3>
+                </TextContainer>
+                <BtnContainer>
+                    <HiderBtn/>
+                </BtnContainer>
+            </TextAndBtn>
             <ContactContainer>
                 {Data.contact.map((contactItem) => (
                     <ContactLogo key={contactItem.id} className={contactItem.icon} link={contactItem.link} />

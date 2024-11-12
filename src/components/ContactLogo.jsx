@@ -15,7 +15,7 @@ const DivIcon = styled.div`
         transform: scale(0.97);
         box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.1);
     }
-    `
+`
 const LinkLogo = styled.a`
     display: flex;
     justify-content: center;
@@ -23,11 +23,11 @@ const LinkLogo = styled.a`
     width: 100%;
     color: #000000;
     text-decoration: none;
-    `
+`
 const IconLogo = styled.i`
         font-size: 28px;
         transition: all 100ms ease-in;
-    `
+`
 
 function ContactLogo ({ link, className }) {
     return (

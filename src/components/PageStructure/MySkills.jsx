@@ -15,7 +15,7 @@ const Container = styled.div`
 const TextContainer = styled.div`
     width: 50%;
 `
-const Titleth3 = styled.h3`
+export const Titleh3 = styled.h3`
     font-family: "Poppins", sans-serif;
     font-size: 25px;
     font-weight: 600;
@@ -39,9 +39,9 @@ function MySkills () {
             <Titleh2>My <Span>Skills</Span></Titleh2>
             <Container>
                 <TextContainer>
-                    <Titleth3>Lorem ipsum dolor sit amet.</Titleth3>
-                    <Titleh4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde aliquid cum vel doloremque nisi officiis!</Titleh4>
-                    <Subtitle>Lorem ipsum dolor sit amet consectetur adipisicing elit.</Subtitle>
+                    <Titleh3>Environnement Frontend</Titleh3>
+                    <Titleh4>Mon savoir-faire est orienté vers les langages qui dominent aujourd&apos;hui le développement web et son écosystème.</Titleh4>
+                    <Subtitle>En route pour des projets plus interactifs !</Subtitle>
                 </TextContainer>
                 <SkillsContainer>
                     <AllSkills/>

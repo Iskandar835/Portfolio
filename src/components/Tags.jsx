@@ -3,24 +3,29 @@ import styled from "styled-components";
 import { IconLogo } from "./TechnoLogo";
 
 
+const Span = styled.span`
+    text-decoration: none;
+`
 const Btn = styled.a`
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 8px;
-    height: 13px;
-    text-decoration: none;
-    color: #000000;
-    border-radius: 5px;
-    background: #E9C2EC; 
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
     gap: 7px;
+    padding: 8px;
+    height: 12px;
+    color: #000000;
+    font-family: "Poppins", sans-serif;
     font-size: 15px;
-    transition: background 200ms ease-in, color 200ms ease-in, transform 100ms ease-in;
+    font-weight: 500;
+    background: #E9C2EC; 
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 150ms ease-in;
     &:hover {
         background: #CF91D8;
-        transform: scale(1.02);
+        ${Span} {
+            text-decoration: underline;
+        }
     }
 `    
 const BtnIcon = styled(IconLogo)`
@@ -30,7 +35,7 @@ const BtnIcon = styled(IconLogo)`
 function Tags ({ href, className, content }) {
     return (
         <>
-            <Btn href={href} target="_blank"><BtnIcon className={className}/>{content}</Btn>
+            <Btn href={href} target="_blank"><BtnIcon className={className}/><Span>{content}</Span></Btn>
         </>
     )
 };
