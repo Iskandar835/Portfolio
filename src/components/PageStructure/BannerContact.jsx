@@ -1,9 +1,9 @@
 import styled from "styled-components";
+import { useState } from "react";
 import { Titleh2 } from "./Projects";
 import { Titleh3 } from "./MySkills";
 import HiderBtn from "../HiderBtn";
-import ContactLogo from "../ContactLogo";
-import Data from "../../data/database.json";
+import HideSection from "../HideSection";
 
 
 export const Span =styled.span`
@@ -54,18 +54,13 @@ export const Subtitle = styled.p`
 const BtnContainer = styled.div`
 
 `
-const ContactContainer = styled.div`
-    display: flex;
-    position: relative;
-    z-index: 2;
-    gap: 80px;
-    background-color: #FFFFFF;
-    padding: 18px 25px;
-    border-radius: 50px;
-    box-shadow: 0px 1px 10px 8px #00000038;
-`
 
 function BannerContact () {
+    const [hidden, setHidden] = useState(true);
+    const handleToggle = () => {
+        setHidden((prev) => !prev)
+    };
+
     return (
         <ContactSection>
             <Overlay/>
@@ -88,14 +83,10 @@ function BannerContact () {
                     </Titleh3>
                 </TextContainer>
                 <BtnContainer>
-                    <HiderBtn/>
+                    <HiderBtn onClick={handleToggle}/>
                 </BtnContainer>
             </TextAndBtn>
-            <ContactContainer>
-                {Data.contact.map((contactItem) => (
-                    <ContactLogo key={contactItem.id} className={contactItem.icon} link={contactItem.link} />
-                ))}
-            </ContactContainer>
+            <HideSection isVisible={hidden}/>
         </ContactSection>
     )
 };

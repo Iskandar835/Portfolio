@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import PropTypes from "prop-types";
 
 
 const Container = styled.button`
@@ -14,19 +15,22 @@ const Container = styled.button`
     border-radius: 10px;
     box-shadow: 4px 6px 0px black;
     cursor: pointer;
-    transition: box-shadow 250ms, transform 250ms;
-    &:hover {
+    transition: box-shadow 20ms, transform 250ms;
+    &:active {
         transform: translate(2px, 2px);
         box-shadow: 2px 3px 0px black;
     }
 `
-
-function HiderBtn () {
+function HiderBtn ({ onClick }) {
     return (
-        <Container>
+        <Container onClick={onClick}>
             Clique-ici
         </Container>
     )
+};
+
+HiderBtn.propTypes = {
+    onClick: PropTypes.func
 };
 
 export default HiderBtn;
