@@ -2,35 +2,48 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 
 
-const Container = styled.button`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    padding: 13px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    background-color: #E9C2EC;
-    border: 4px solid #000000;
-    border-radius: 10px;
-    box-shadow: 4px 6px 0px black;
-    cursor: pointer;
-    transition: box-shadow 20ms, transform 250ms;
-    &:active {
-        transform: translate(2px, 2px);
-        box-shadow: 2px 3px 0px black;
-    }
+const Content = styled.span`
+    display: block;
+    box-sizing: border-box;
+    padding: 0.75em 1.5em;
+    color: #000000;
+    background: #f2f2f2;
+    border: 2px solid #000000;
+    border-radius: 0.75em;
+    transform: translateY(-0.2em);
+    transition: transform 100ms ease;
 `
-function HiderBtn ({ onClick }) {
+const Container = styled.button`
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    background: #E9C2EC;
+    border: none;
+    border-radius: 0.75em;
+    white-space: nowrap;
+    cursor: pointer;
+    &:hover {
+        ${Content} {
+            transform: translateY(-0.33em);
+        }
+    }
+    &:active {
+        ${Content}{
+            transform: translateY(0);
+        }
+    }
+` 
+function HiderBtn ({ onClick, content }) {
     return (
-        <Container onClick={onClick}>
-            Clique-ici
+        <Container onClick={onClick} content={content}>
+            <Content>{content}</Content>
         </Container>
     )
 };
 
 HiderBtn.propTypes = {
-    onClick: PropTypes.func
+    onClick: PropTypes.func,
+    content: PropTypes.string
 };
 
 export default HiderBtn;

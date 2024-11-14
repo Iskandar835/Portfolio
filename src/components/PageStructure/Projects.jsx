@@ -10,13 +10,14 @@ const ProjectSection = styled.section`
     margin: 200px 80px 0 80px;
     padding: 0 150px;
 `
+export const Titleh2 = styled.h2`
+    font-family: "Poppins", sans-serif;
+    font-size: 60px;
+    text-wrap: nowrap;
+`
 const AllCards = styled.div`
     display: flex;
     justify-content: space-between;
-`
-export const Titleh2 = styled.h2`
-    font-family: "Poppins", sans-serif;
-    font-size: 65px;
 `
 
 function Projects () {

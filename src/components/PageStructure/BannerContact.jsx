@@ -15,8 +15,8 @@ const ContactSection = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 200px 100px 50px 100px;
-    background-color: #6E6E73;
+    padding: 200px 200px 50px 200px;
+    background-color: #F2F2F2;
     background: url("./src/assets/doodle-items.avif");
 `
 const Overlay = styled.div`
@@ -33,8 +33,8 @@ const TextAndBtn = styled.div`
     position: relative;
     z-index: 2;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 400px;
     margin: 0 0 70px 0;
 `
 const TextContainer = styled.div`
@@ -44,6 +44,7 @@ const Title = styled.h1`
     margin: 0;
     font-family: "Poppins", sans-serif;
     font-size: 45px;
+    text-wrap: nowrap;
 `
 const SecondTitle = styled(Titleh2)`
     margin: 0;
@@ -52,7 +53,7 @@ export const Subtitle = styled.p`
     font-size: 20px;
 `
 const BtnContainer = styled.div`
-
+    margin: 80px 0 0 0;
 `
 
 function BannerContact () {
@@ -68,22 +69,17 @@ function BannerContact () {
                 <TextContainer>
                     <Title>Sacha Vandermoeten</Title>
                     <SecondTitle>Developpeur <Span>Frontend</Span></SecondTitle>
-                        <Subtitle> 
-                            Passionné par le développement web, je crée des applications modernes 
-                            et performantes avec les technologies les plus adaptées. Curieux et 
-                            toujours en veille, je maîtrise HTML, CSS, JavaScript, et possède une 
-                            solide expérience avec React.js pour des interfaces interactives et 
-                            optimisées. Mon approche privilégie dynamisme, optimisation et maintenabilité 
-                            du code, et je cherche constamment à affiner mes compétences et enrichir mon 
-                            expertise. Tu trouveras juste ci-dessous le moyen de me <Span>contacter</Span>, 
-                            ainsi que certains de mes <Span>projets</Span>. Bon visionnage !
-                        </Subtitle>
+                    <Subtitle> 
+                        Je suis passionné par la conception d&apos;interfaces modernes, esthétiques et faciles à utiliser. 
+                        J’aime concevoir des expériences utilisateur agréables en m&apos;appuyant sur des technologies actuelles, 
+                        en m’assurant que chaque projet est bien structuré, optimisé et intuitif.
+                    </Subtitle>
                     <Titleh3>
-                        Mes contacts se trouve &quot;derriere&quot; le boutton .....
+                       Vous souhaitez me contacter ?
                     </Titleh3>
                 </TextContainer>
                 <BtnContainer>
-                    <HiderBtn onClick={handleToggle}/>
+                    <HiderBtn onClick={handleToggle} content={"Cliquez Ici !"}/>
                 </BtnContainer>
             </TextAndBtn>
             <HideSection isVisible={hidden}/>
