@@ -7,17 +7,18 @@ import { Span } from "./BannerContact";
 const ProjectSection = styled.section`
     display: flex;
     flex-direction: column;
-    margin: 200px 80px 0 80px;
-    padding: 0 150px;
+    margin: 200px 50px 0 50px;
 `
 export const Titleh2 = styled.h2`
     font-family: "Poppins", sans-serif;
     font-size: 60px;
     text-wrap: nowrap;
+    text-align: center;
 `
 const AllCards = styled.div`
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 50px;
 `
 
 function Projects () {

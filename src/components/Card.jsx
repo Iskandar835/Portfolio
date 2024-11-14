@@ -5,7 +5,7 @@ import Logo from "./TechnoLogo";
 
 const CardLink = styled.a`
     display: flex;
-    width: 30%;
+    width: 340px;
     height: 300px;
     text-decoration: none;
 `

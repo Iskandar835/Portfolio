@@ -14,6 +14,7 @@ const Content = styled.span`
     transition: transform 100ms ease;
 `
 const Container = styled.button`
+    padding: 2px 0;
     font-family: "Poppins", sans-serif;
     font-size: 17px;
     font-weight: 600;

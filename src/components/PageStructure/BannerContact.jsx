@@ -9,6 +9,7 @@ import HideSection from "../HideSection";
 export const Span =styled.span`
     font-weight: bold;
     color: #E9C2EC;
+    text-shadow: 5px 5px #000000;
 `
 const ContactSection = styled.section`
     position: relative;
@@ -48,6 +49,7 @@ const Title = styled.h1`
 `
 const SecondTitle = styled(Titleh2)`
     margin: 0;
+    text-align: left;
 `
 export const Subtitle = styled.p`
     font-size: 20px;

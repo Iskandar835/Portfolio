@@ -5,12 +5,13 @@ import AllSkills from "../AllSkills";
 
 
 const Section = styled.section`
-    margin: 200px 80px 0 80px;
-    padding: 0 150px;
+    margin: 200px 50px 0 50px;
 `
 const Container = styled.div`
     display: flex;
     align-items:center;
+    justify-content: center;
+    gap: 90px;
 `
 const TextContainer = styled.div`
     width: 50%;
@@ -27,9 +28,7 @@ export const Titleh4 = styled.h4`
     font-weight: 600;
 `
 const SkillsContainer = styled.div`
-    width: 50%;
     display: flex;
-    justify-content: center;
     margin-bottom: 80px;
 `
 
