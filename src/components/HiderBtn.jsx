@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import PropTypes from "prop-types";
+import { devices } from "../helpers/Breakpoints";
 
 
 const Content = styled.span`
@@ -12,6 +13,9 @@ const Content = styled.span`
     border-radius: 0.75em;
     transform: translateY(-0.2em);
     transition: transform 100ms ease;
+    @media ${devices.tabs} {
+        transform: translateY(-0.33em);
+    }
 `
 const Container = styled.button`
     padding: 2px 0;

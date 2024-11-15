@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { devices } from "../../helpers/Breakpoints";
 import { useState } from "react";
 import { Titleh2 } from "./Projects";
 import { Titleh3 } from "./MySkills";
@@ -19,6 +20,10 @@ const ContactSection = styled.section`
     padding: 200px 200px 50px 200px;
     background-color: #F2F2F2;
     background: url("./src/assets/doodle-items.avif");
+    @media ${devices.tabs} {
+        padding: 150px 80px 50px 80px;
+        text-align: center;
+    }
 `
 const Overlay = styled.div`
     position: absolute;
@@ -37,9 +42,15 @@ const TextAndBtn = styled.div`
     justify-content: space-between;
     align-items: center;
     margin: 0 0 70px 0;
+    @media ${devices.tabs} {
+        flex-direction: column;
+    }
 `
 const TextContainer = styled.div`
     width: 60%;
+    @media ${devices.tabs} {
+        width: auto;
+    }
 `
 const Title = styled.h1`
     margin: 0;
@@ -50,12 +61,21 @@ const Title = styled.h1`
 const SecondTitle = styled(Titleh2)`
     margin: 0;
     text-align: left;
+    @media ${devices.tabs} {
+        text-align: center;
+    }
 `
 export const Subtitle = styled.p`
     font-size: 20px;
+    @media ${devices.tabs} {
+        margin: 40px 0;
+    }
 `
 const BtnContainer = styled.div`
     margin: 80px 0 0 0;
+    @media ${devices.tabs} {
+        margin: 35px 0 0 0;
+    }
 `
 
 function BannerContact () {
