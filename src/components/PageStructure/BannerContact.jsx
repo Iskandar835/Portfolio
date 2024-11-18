@@ -11,6 +11,9 @@ export const Span =styled.span`
     font-weight: bold;
     color: #E9C2EC;
     text-shadow: 5px 5px #000000;
+    @media ${devices.mobile} {
+        text-shadow: 4px 3px #000000;
+    }
 `
 const ContactSection = styled.section`
     position: relative;
@@ -22,6 +25,10 @@ const ContactSection = styled.section`
     background: url("./src/assets/doodle-items.avif");
     @media ${devices.tabs} {
         padding: 150px 80px 50px 80px;
+        text-align: center;
+    }
+    @media ${devices.mobile} {
+        padding: 100px 30px 50px 30px;
         text-align: center;
     }
 `
@@ -45,10 +52,17 @@ const TextAndBtn = styled.div`
     @media ${devices.tabs} {
         flex-direction: column;
     }
+    @media ${devices.mobile} {
+        flex-direction: column;
+        margin: 0 0 50px 0;
+    }
 `
 const TextContainer = styled.div`
     width: 60%;
     @media ${devices.tabs} {
+        width: auto;
+    }
+    @media ${devices.mobile} {
         width: auto;
     }
 `
@@ -60,11 +74,18 @@ const Title = styled.h1`
     @media ${devices.tabs} {
         font-size: 35px;
     }
+    @media ${devices.mobile} {
+        font-size: 25px;
+        text-wrap: wrap;
+    }
 `
 const SecondTitle = styled(Titleh2)`
     margin: 0;
     text-align: left;
     @media ${devices.tabs} {
+        text-align: center;
+    }
+    @media ${devices.mobile} {
         text-align: center;
     }
 `
@@ -73,11 +94,18 @@ export const Subtitle = styled.p`
     @media ${devices.tabs} {
         margin: 40px 0;
     }
+    @media ${devices.mobile} {
+        margin: 30px 0 0 0;
+        font-size: 18px;
+    }
 `
 const BtnContainer = styled.div`
     margin: 80px 0 0 0;
     @media ${devices.tabs} {
         margin: 35px 0 0 0;
+    }
+    @media ${devices.mobile} {
+        margin: 0;
     }
 `
 

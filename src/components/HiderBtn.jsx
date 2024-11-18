@@ -37,6 +37,9 @@ const Container = styled.button`
             transform: translateY(0);
         }
     }
+    @media ${devices.mobile} {
+        font-size: 15px;
+    }
 ` 
 function HiderBtn ({ onClick, content }) {
     return (

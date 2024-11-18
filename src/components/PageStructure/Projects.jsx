@@ -22,6 +22,10 @@ export const Titleh2 = styled.h2`
     @media ${devices.tabs} {
         font-size: 50px;
         text-align: center;
+        }
+    @media ${devices.mobile} {
+        text-wrap: wrap;
+        font-size: 33px;
     }
 `
 const AllCards = styled.div`
@@ -29,6 +33,11 @@ const AllCards = styled.div`
     justify-content: center;
     gap: 50px;
     @media ${devices.tabs} {
+        align-items: center;
+        flex-direction: column;
+        gap: 70px;
+    }
+    @media ${devices.mobile} {
         align-items: center;
         flex-direction: column;
         gap: 70px;

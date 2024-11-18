@@ -18,6 +18,9 @@ const Container = styled.div`
     @media ${devices.tabs} {
         gap: 70px;
     }
+    @media ${devices.mobile} {
+        flex-direction: column;
+    }
 `
 const TextContainer = styled.div`
     width: 50%;
@@ -26,6 +29,10 @@ export const Titleh3 = styled.h3`
     font-family: "Poppins", sans-serif;
     font-size: 25px;
     font-weight: 600;
+    @media ${devices.mobile} {
+        margin: 40px 0;
+        font-size: 22px;
+    }
 `
 export const Titleh4 = styled.h4`
     margin: 0;
