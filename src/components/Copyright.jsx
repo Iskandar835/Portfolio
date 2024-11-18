@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { devices } from "../helpers/Breakpoints";
 
 const Container = styled.div`
     display: flex;
@@ -11,6 +11,9 @@ const Text = styled.p`
     gap: 5px;
     margin: 0;
     font-size: 13px;
+    @media ${devices.mobile} {
+        font-size: 11px;
+    }
 `
 
 function Copyright () {

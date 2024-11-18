@@ -38,6 +38,7 @@ const Container = styled.button`
         }
     }
     @media ${devices.mobile} {
+        margin: 40px 0 0 0;
         font-size: 15px;
     }
 ` 

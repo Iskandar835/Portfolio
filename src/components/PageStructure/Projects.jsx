@@ -12,6 +12,9 @@ const ProjectSection = styled.section`
     @media ${devices.tabs} {
         margin: 150px 130px 0 130px;
     }
+    @media ${devices.mobile} {
+        margin: 100px 30px 0 30px;
+    }
 `
 export const Titleh2 = styled.h2`
     margin: 0 0 80px 0;
@@ -24,6 +27,7 @@ export const Titleh2 = styled.h2`
         text-align: center;
         }
     @media ${devices.mobile} {
+        margin: 0 0 50px 0;
         text-wrap: wrap;
         font-size: 33px;
     }
@@ -40,7 +44,7 @@ const AllCards = styled.div`
     @media ${devices.mobile} {
         align-items: center;
         flex-direction: column;
-        gap: 70px;
+        gap: 45px;
     }
 `
 

@@ -4,10 +4,15 @@ import { Span, Subtitle } from "./BannerContact";
 import AllSkills from "../AllSkills";
 import { devices } from "../../helpers/Breakpoints";
 
+
 const Section = styled.section`
     margin: 200px 50px 0 50px;
     @media ${devices.tabs} {
         margin: 150px 50px 0 50px;
+    }
+    @media ${devices.mobile} {
+        text-align: center;
+        margin: 150px 30px 0 30px;
     }
 `
 const Container = styled.div`
@@ -19,18 +24,22 @@ const Container = styled.div`
         gap: 70px;
     }
     @media ${devices.mobile} {
-        flex-direction: column;
+        flex-direction: column-reverse;
+        gap: 0px;
     }
 `
 const TextContainer = styled.div`
     width: 50%;
+    @media ${devices.mobile} {
+        width: auto;
+    }
 `
 export const Titleh3 = styled.h3`
     font-family: "Poppins", sans-serif;
     font-size: 25px;
     font-weight: 600;
     @media ${devices.mobile} {
-        margin: 40px 0;
+        margin: 0;
         font-size: 22px;
     }
 `
@@ -42,13 +51,18 @@ export const Titleh4 = styled.h4`
     @media ${devices.tabs} {
         font-size: 30px;
     }
+    @media ${devices.mobile} {
+        margin: 30px 0 0 0;
+        font-size: 22px;
+        font-weight: 500;
+    }
 `
 const SkillsContainer = styled.div`
     display: flex;
     margin-bottom: 80px;
-    @media ${devices.tabs} {
-        transform: scale(0.8);
-    }
+   @media ${devices.mobile} {
+    margin-bottom: 65px;
+   }
 `
 
 function MySkills () {

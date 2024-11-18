@@ -12,6 +12,10 @@ const CardLink = styled.a`
     @media ${devices.tabs} {
         width: 100%;
     }
+    @media ${devices.mobile} {
+        width: 80%;
+        height: 210px;
+    }
 `
 const CardContent = styled.div`
     position: relative;
@@ -29,6 +33,9 @@ const CardContent = styled.div`
     @media ${devices.tabs} {
         top: 215px;
     }
+    @media ${devices.mobile} {
+        top: 150px;
+    }
 `
 const CardContainer = styled.div`
     display: flex;
@@ -41,13 +48,15 @@ const CardContainer = styled.div`
     border-radius: 15px;
     box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.1);
     transition: transform 175ms ease-out, box-shadow 175ms ease-out;
-    &:hover {
-        transform: scale(1.01);
-        box-shadow: 3px 3px 16px 9px rgba(0, 0, 0, 0.1);
-    }
-    &:hover {
-        ${CardContent} {
-            top: 210px;
+    @media (min-width: 1025px) {
+        &:hover {
+            transform: scale(1.01);
+            box-shadow: 3px 3px 16px 9px rgba(0, 0, 0, 0.1);
+        }
+        &:hover {
+            ${CardContent} {
+                top: 210px;
+            }
         }
     }
 `
@@ -57,6 +66,9 @@ const CardImg = styled.img`
     height: 100%;
     border-radius: 15px;
     object-fit: cover;
+    @media ${devices.mobile} {
+        object-fit: contain;
+    }
 `
 function CardAlone ({ projet }) {
     return (

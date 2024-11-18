@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import Data from "../data/database.json";
 import ContactLogo from "./ContactLogo";
+import { devices } from "../helpers/Breakpoints";
 
 
 const ContactContainer = styled.nav`
@@ -25,6 +26,10 @@ const ContactContainer = styled.nav`
         backdrop-filter: blur(35px);
         border-radius: 50px;
         transition: left 200ms ease-in-out;
+    }
+    @media ${devices.mobile} {
+        gap: 40px;
+        padding: 15px 20px;
     }
 `
 

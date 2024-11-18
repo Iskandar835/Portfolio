@@ -95,7 +95,7 @@ export const Subtitle = styled.p`
         margin: 40px 0;
     }
     @media ${devices.mobile} {
-        margin: 30px 0 0 0;
+        margin: 30px 0 40px 0;
         font-size: 18px;
     }
 `

@@ -12,8 +12,14 @@ const FooterSection = styled.footer`
     color: #FFFFFF;
     background-color: #000000;
     border-radius: 170px 170px 0 0;
+    text-align: center;
     @media ${devices.tabs} {
         margin: 150px 0 0 0;
+    }
+    @media ${devices.mobile} {
+        margin: 150px 0 0 0;
+        padding: 50px 30px 20px 30px;
+        border-radius: 80px 80px 0 0;
     }
 `
 const BothSection = styled.div`
@@ -23,13 +29,19 @@ const BothSection = styled.div`
         flex-direction: column;
         margin-bottom: 90px;
     }
+    @media ${devices.mobile} {
+        flex-direction: column;
+        margin-bottom: 90px;
+    }
 `
 const FirstSection = styled.div`
-    text-align: center;
 `
 const SecondSection = styled.div`
     margin-top: 120px;
     @media ${devices.tabs} {
+        margin-top: 50px;
+    }
+    @media ${devices.mobile} {
         margin-top: 50px;
     }
 `
@@ -40,6 +52,9 @@ const ContactIndication = styled.p`
     flex-wrap: wrap;
     gap: 5px;
     font-size: 18px;
+    @media ${devices.mobile} {
+        font-size: 15px;
+    }
 `
 
 function Footer () {

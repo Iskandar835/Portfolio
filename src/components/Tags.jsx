@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import { IconLogo } from "./TechnoLogo";
+import { devices } from "../helpers/Breakpoints";
 
 
 const Span = styled.span`
@@ -21,11 +22,25 @@ const Btn = styled.a`
     border-radius: 5px;
     text-decoration: none;
     transition: background 150ms ease-in;
-    &:hover {
+    @media (min-width: 320px) and (max-width: 1024px) {
+        &:active {
         background: #CF91D8;
-        ${Span} {
-            text-decoration: underline;
+            ${Span} {
+                text-decoration: underline;
+            }
         }
+    }
+    @media (min-width: 1025px) {
+        &:hover {
+        background: #CF91D8;
+            ${Span} {
+                text-decoration: underline;
+            }
+        }
+    }
+    @media ${devices.mobile} {
+        height: 10px;
+        font-size: 12px;
     }
 `    
 const BtnIcon = styled(IconLogo)`

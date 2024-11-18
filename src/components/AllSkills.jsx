@@ -1,13 +1,19 @@
 import styled from "styled-components";
 import SkillLogo from "./SkillLogo";
 import Data from "../data/database.json";
+import { devices } from "../helpers/Breakpoints";
 
 
 const Container = styled.div`
     position: relative;
     width: 280px;
     height: 280px;
-    border-radius: 50%; 
+     @media ${devices.tabs} {
+        transform: scale(0.8);
+    }
+    @media ${devices.mobile} {
+        transform: scale(0.7);
+    }
 `
 const ImgComputer = styled.img`
     position: relative;
