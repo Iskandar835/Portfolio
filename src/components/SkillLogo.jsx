@@ -8,7 +8,6 @@ const RotateAnimation = keyframes`
         transform:  rotate(0deg)
                     translate(-150px)
                     rotate(0deg);
-    
     }
     100%{
         transform:  rotate(360deg)
@@ -41,6 +40,7 @@ const Logo = styled(LogoContainer)`
         &:nth-child(4) { 
             animation-delay: -4.5s;
         }
+
 `
 const ImgLogo = styled.img`
     width: 35px;

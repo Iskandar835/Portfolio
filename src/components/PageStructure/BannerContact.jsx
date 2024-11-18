@@ -57,6 +57,9 @@ const Title = styled.h1`
     font-family: "Poppins", sans-serif;
     font-size: 45px;
     text-wrap: nowrap;
+    @media ${devices.tabs} {
+        font-size: 35px;
+    }
 `
 const SecondTitle = styled(Titleh2)`
     margin: 0;

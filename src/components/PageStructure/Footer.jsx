@@ -3,6 +3,7 @@ import { Titleh4 } from "./MySkills";
 import Tags from "../Tags";
 import Data from "../../data/database.json";
 import Copyright from "../Copyright";
+import { devices } from "../../helpers/Breakpoints";
 
 
 const FooterSection = styled.footer`
@@ -11,16 +12,26 @@ const FooterSection = styled.footer`
     color: #FFFFFF;
     background-color: #000000;
     border-radius: 170px 170px 0 0;
+    @media ${devices.tabs} {
+        margin: 150px 0 0 0;
+    }
 `
 const BothSection = styled.div`
     display: flex;
     margin-bottom: 120px;
+    @media ${devices.tabs} {
+        flex-direction: column;
+        margin-bottom: 90px;
+    }
 `
 const FirstSection = styled.div`
     text-align: center;
 `
 const SecondSection = styled.div`
     margin-top: 120px;
+    @media ${devices.tabs} {
+        margin-top: 50px;
+    }
 `
 const ContactIndication = styled.p`
     display: flex;
@@ -30,7 +41,6 @@ const ContactIndication = styled.p`
     gap: 5px;
     font-size: 18px;
 `
-
 
 function Footer () {
     const data = Data.contact;

@@ -2,16 +2,22 @@ import styled from "styled-components";
 import { Titleh2 } from "./Projects";
 import { Span, Subtitle } from "./BannerContact";
 import AllSkills from "../AllSkills";
-
+import { devices } from "../../helpers/Breakpoints";
 
 const Section = styled.section`
     margin: 200px 50px 0 50px;
+    @media ${devices.tabs} {
+        margin: 150px 50px 0 50px;
+    }
 `
 const Container = styled.div`
     display: flex;
     align-items:center;
     justify-content: center;
     gap: 90px;
+    @media ${devices.tabs} {
+        gap: 70px;
+    }
 `
 const TextContainer = styled.div`
     width: 50%;
@@ -26,10 +32,16 @@ export const Titleh4 = styled.h4`
     font-family: "Poppins", sans-serif;
     font-size: 35px;
     font-weight: 600;
+    @media ${devices.tabs} {
+        font-size: 30px;
+    }
 `
 const SkillsContainer = styled.div`
     display: flex;
     margin-bottom: 80px;
+    @media ${devices.tabs} {
+        transform: scale(0.8);
+    }
 `
 
 function MySkills () {

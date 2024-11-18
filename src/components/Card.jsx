@@ -10,8 +10,7 @@ const CardLink = styled.a`
     height: 300px;
     text-decoration: none;
     @media ${devices.tabs} {
-        width: 430px;
-        height: 330px;
+        width: 100%;
     }
 `
 const CardContent = styled.div`
@@ -28,7 +27,7 @@ const CardContent = styled.div`
     border-radius: 0 0 15px 15px;
     transition: top 175ms ease-out;
     @media ${devices.tabs} {
-        top: 235px;
+        top: 215px;
     }
 `
 const CardContainer = styled.div`

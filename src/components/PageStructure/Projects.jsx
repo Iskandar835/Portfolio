@@ -10,16 +10,17 @@ const ProjectSection = styled.section`
     flex-direction: column;
     margin: 200px 50px 0 50px;
     @media ${devices.tabs} {
-        margin: 150px 80px 0 80px;
+        margin: 150px 130px 0 130px;
     }
 `
 export const Titleh2 = styled.h2`
+    margin: 0 0 80px 0;
     font-family: "Poppins", sans-serif;
     font-size: 60px;
     text-wrap: nowrap;
     text-align: center;
     @media ${devices.tabs} {
-        margin: 0 0 80px 0;
+        font-size: 50px;
         text-align: center;
     }
 `
