@@ -35,7 +35,7 @@ const Location = styled.p`
 function Header () {
     return (
         <HeaderTag>
-            <Logo src="./public/Logo2.png" alt="Logo du portfolio" />
+            <Logo src={`${import.meta.env.BASE_URL}/assets/Logo2.png`} alt="Logo du portfolio" />
             <Location><i className="fa-solid fa-location-dot"></i>Toulon, France</Location>
         </HeaderTag>
     )

@@ -74,7 +74,7 @@ function CardAlone ({ projet }) {
     return (
         <CardLink href={projet.link} target="_blank">
             <CardContainer>
-                <CardImg src={projet.picture} alt={projet.name}/>
+                <CardImg src={`${import.meta.env.BASE_URL}${projet.picture}`} alt={projet.name}/>
                 <CardContent>
                     {projet.technos.map((techno, index) => (
                         <Logo key={index} className={techno}/>

@@ -27,9 +27,9 @@ function AllSkills () {
     return (
         <Container>
             {Data.skills.map((item) => (
-                <SkillLogo key={item.id} source={item.source} alt={item.alt} />
+                <SkillLogo key={item.id} source={`${import.meta.env.BASE_URL}${item.source}`} alt={item.alt} />
             ))}
-            <ImgComputer src="./src/assets/computeur.png" alt="Dessins d'un ordinateur" />
+            <ImgComputer src={`${import.meta.env.BASE_URL}assets/computeur.png`} alt="Dessins d'un ordinateur" />
         </Container>
     )
 };
