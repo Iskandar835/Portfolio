@@ -24,7 +24,7 @@
             "id": 1,
             "name": "Shaperz",
             "link": "https://github.com/Iskandar835/Shaperz",
-            "picture": "./src/assets/macbook-shaperz.png",
+            "picture": "./public/macbook-shaperz.png",
             "technos": [
                 "fa-brands fa-sass", 
                 "fa-brands fa-js"
@@ -34,7 +34,7 @@
             "id":2,
             "name": "Oh My Food ",
             "link": "https://github.com/Iskandar835/Oh-My-Food",
-            "picture": "./src/assets/iphone-ohmyfood.png",
+            "picture": "./public/iphone-ohmyfood.png",
             "technos": [
                 "fa-brands fa-html5",
                 "fa-brands fa-sass"
@@ -44,7 +44,7 @@
             "id":3,
             "name": "kasa",
             "link": "https://github.com/Iskandar835/Kasa",
-            "picture": "./src/assets/iphone-kasa.png",
+            "picture": "./public/iphone-kasa.png",
             "technos": [
                 "fa-brands fa-css3",
                 "fa-brands fa-react"
@@ -54,22 +54,22 @@
     "skills": [
         {
             "id": 1,
-            "source":"./src/assets/logo-html.png",
+            "source":"./public/logo-html.png",
             "alt":"Logo HTML"
         },
         {
             "id": 2,
-            "source":"./src/assets/logo-css.png",
+            "source":"./public/logo-css.png",
             "alt":"Logo CSS"
         },
         {
             "id": 3,
-            "source":"./src/assets/logo-javascript.jpg",
+            "source":"./public/logo-javascript.jpg",
             "alt":"Logo javaScript"
         },
         {
             "id": 4,
-            "source":"./src/assets/logo-react.png",
+            "source":"./public/logo-react.png",
             "alt":"Logo REACT"
         }
     ]
