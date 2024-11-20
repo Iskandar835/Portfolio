@@ -9,9 +9,9 @@ export const LogoContainer = styled.div`
     align-items: center;
     width: 45px;
     height: 45px;
-    border: 2px solid #E9C2EC;
+    background-color: var(--first-bg-color);
+    border: 2px solid var(--secondary-color);
     border-radius: 50px;
-    background-color: #FFFFFF;
     @media ${devices.mobile} {
         width: 35px;
         height: 35px;
@@ -19,7 +19,7 @@ export const LogoContainer = styled.div`
 `
 export const IconLogo = styled.i`
     font-size: 20px;
-    color: #000000;
+    color: var(--first-font-color);
     @media ${devices.mobile} {
         font-size: 18px;
     }

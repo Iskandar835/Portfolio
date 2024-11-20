@@ -18,18 +18,18 @@ const ProjectSection = styled.section`
 `
 export const Titleh2 = styled.h2`
     margin: 0 0 80px 0;
-    font-family: "Poppins", sans-serif;
+    font-family: var(--title-font-family);
     font-size: 60px;
     text-wrap: nowrap;
     text-align: center;
     @media ${devices.tabs} {
         font-size: 50px;
         text-align: center;
-        }
+    }
     @media ${devices.mobile} {
         margin: 0 0 50px 0;
-        text-wrap: wrap;
         font-size: 33px;
+        text-wrap: wrap;
     }
 `
 const AllCards = styled.div`
@@ -53,8 +53,8 @@ function Projects () {
         <ProjectSection>
             <Titleh2>Mes <Span>projets</Span></Titleh2>
             <AllCards>
-                {Data.projets.map((projets) => (
-                    <CardAlone key={projets.id} projet={projets}/>
+                {Data.projects.map((item) => (
+                    <CardAlone key={item.id} project={item}/>
                 ))}
             </AllCards>
         </ProjectSection>

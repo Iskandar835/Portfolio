@@ -9,10 +9,10 @@ import HideSection from "../HideSection";
 
 export const Span =styled.span`
     font-weight: bold;
-    color: #E9C2EC;
-    text-shadow: 5px 5px #000000;
+    color: var(--secondary-color);
+    text-shadow: 5px 5px var(--first-font-color);
     @media ${devices.mobile} {
-        text-shadow: 4px 3px #000000;
+        text-shadow: 4px 3px var(--first-font-color);
     }
 `
 const ContactSection = styled.section`
@@ -21,8 +21,8 @@ const ContactSection = styled.section`
     flex-direction: column;
     align-items: center;
     padding: 200px 200px 50px 200px;
-    background-color: #F2F2F2;
-    background: url("./src/assets/doodle-items.avif");
+    background-color: var(--primary-color);
+    background: url("assets/doodle-items.avif");
     @media ${devices.tabs} {
         padding: 150px 80px 50px 80px;
         text-align: center;
@@ -59,16 +59,13 @@ const TextAndBtn = styled.div`
 `
 const TextContainer = styled.div`
     width: 60%;
-    @media ${devices.tabs} {
+    @media ${devices.tabsAndMobile} {
         width: auto;
-    }
-    @media ${devices.mobile} {
-        width: auto;
-    }
+    }                      
 `
 const Title = styled.h1`
     margin: 0;
-    font-family: "Poppins", sans-serif;
+    font-family: var(--title-font-family);
     font-size: 45px;
     text-wrap: nowrap;
     @media ${devices.tabs} {
@@ -82,11 +79,8 @@ const Title = styled.h1`
 const SecondTitle = styled(Titleh2)`
     margin: 0;
     text-align: left;
-    @media ${devices.tabs} {
-        text-align: center;
-    }
-    @media ${devices.mobile} {
-        text-align: center;
+    @media ${devices.tabsAndMobile} {
+        text-align: center;      
     }
 `
 export const Subtitle = styled.p`

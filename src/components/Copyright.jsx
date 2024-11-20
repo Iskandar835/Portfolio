@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { devices } from "../helpers/Breakpoints";
 
+
 const Container = styled.div`
     display: flex;
     justify-content: center;

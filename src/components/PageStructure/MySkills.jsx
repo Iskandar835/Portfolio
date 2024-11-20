@@ -35,7 +35,7 @@ const TextContainer = styled.div`
     }
 `
 export const Titleh3 = styled.h3`
-    font-family: "Poppins", sans-serif;
+    font-family: var(--title-font-family);
     font-size: 25px;
     font-weight: 600;
     @media ${devices.mobile} {
@@ -45,7 +45,7 @@ export const Titleh3 = styled.h3`
 `
 export const Titleh4 = styled.h4`
     margin: 0;
-    font-family: "Poppins", sans-serif;
+    font-family: var(--title-font-family);
     font-size: 35px;
     font-weight: 600;
     @media ${devices.tabs} {
@@ -60,9 +60,9 @@ export const Titleh4 = styled.h4`
 const SkillsContainer = styled.div`
     display: flex;
     margin-bottom: 80px;
-   @media ${devices.mobile} {
-    margin-bottom: 65px;
-   }
+    @media ${devices.mobile} {
+        margin-bottom: 65px;
+    }
 `
 
 function MySkills () {

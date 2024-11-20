@@ -7,27 +7,27 @@ const DivIcon = styled.div`
     display: flex;
     width: 60px;
     height: 60px;
-    border: 2px solid #E9C2EC;
+    background-color: var(--first-bg-color);
+    border: 2px solid var(--secondary-color);
     border-radius: 50px;
-    background-color: #FFFFFF;
-    box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 8px 6px 5px rgba(0, 0, 0, 0.1);
     transition: transform 150ms ease-in, box-shadow 150ms ease-in;
-    @media (min-width: 1025px) {
+    @media ${devices.onlyComputeur} {
         &:hover {
             transform: scale(0.97);
             box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.1);
         }
     }
-    @media (min-width: 320px) and (max-width: 1024px) {
+    @media ${devices.tabsAndMobile} {
+        box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.1);
         &:active {
             transform: scale(0.97);
-            box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
         }
     }
     @media ${devices.mobile} {
         width: 45px;
         height: 45px;
-        box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.1);
     }
 `
 const LinkLogo = styled.a`
@@ -35,12 +35,11 @@ const LinkLogo = styled.a`
     justify-content: center;
     align-items: center;
     width: 100%;
-    color: #000000;
+    color: var(--first-font-color);
     text-decoration: none;
 `
 const IconLogo = styled.i`
     font-size: 28px;
-    transition: all 100ms ease-in;
     @media ${devices.mobile} {
         font-size: 20px;
     }

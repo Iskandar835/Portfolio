@@ -6,11 +6,11 @@ import { devices } from "../helpers/Breakpoints";
 const Content = styled.span`
     display: block;
     box-sizing: border-box;
-    padding: 0.75em 1.5em;
-    color: #000000;
-    background: #f2f2f2;
-    border: 2px solid #000000;
-    border-radius: 0.75em;
+    padding: 12px 24px;
+    color: var(--first-font-color);
+    background: var(--primary-color);
+    border: 2px solid var(--secondary-bg-color);
+    border-radius: 12px;
     transform: translateY(-0.2em);
     transition: transform 100ms ease;
     @media ${devices.tabs} {
@@ -19,22 +19,31 @@ const Content = styled.span`
 `
 const Container = styled.button`
     padding: 2px 0;
-    font-family: "Poppins", sans-serif;
+    font-family: var(--title-font-family);
     font-size: 17px;
     font-weight: 600;
-    background: #E9C2EC;
+    background: var(--secondary-color);
     border: none;
-    border-radius: 0.75em;
+    border-radius: 12px;
     white-space: nowrap;
     cursor: pointer;
-    &:hover {
-        ${Content} {
-            transform: translateY(-0.33em);
+    @media ${devices.onlyComputeur} {
+        &:hover {
+            ${Content} {
+                transform: translateY(-0.33em);
+            }
+        }
+        &:active {
+            ${Content} {
+                transform: translateY(0);
+            }
         }
     }
-    &:active {
-        ${Content}{
-            transform: translateY(0);
+    @media ${devices.tabsAndMobile} {
+        &:active {
+            ${Content} {
+                transform: translateY(0);
+            }
         }
     }
     @media ${devices.mobile} {

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { devices } from "../../helpers/Breakpoints";
 
+
 const HeaderTag = styled.header`
     position: relative;
     z-index: 2;
@@ -9,7 +10,7 @@ const HeaderTag = styled.header`
     align-items: center;
     height: 100px;
     padding: 0 35px;
-    background-color: #FFFFFF;
+    background-color: var(--first-bg-color);
     box-shadow: 0px 7px 15px #0000003b;
     @media ${devices.mobile} {
         justify-content: center;

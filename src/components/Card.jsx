@@ -27,7 +27,7 @@ const CardContent = styled.div`
     gap: 20px;
     width: 100%;
     height: 30%;
-    background-color: ##6e6e7300;
+    background-color: #6e6e7300;
     border-radius: 0 0 15px 15px;
     transition: top 175ms ease-out;
     @media ${devices.tabs} {
@@ -38,17 +38,17 @@ const CardContent = styled.div`
     }
 `
 const CardContainer = styled.div`
+    position: relative;
     display: flex;
     flex-direction: column;
-    position: relative;
     width: 100%;
     height: 100%;
-    overflow: hidden; 
-    background-color: #FFFFFF;
+    background-color: var(--first-bg-color);
     border-radius: 15px;
     box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.1);
+    overflow: hidden; 
     transition: transform 175ms ease-out, box-shadow 175ms ease-out;
-    @media (min-width: 1025px) {
+    @media ${devices.onlyComputeur} {
         &:hover {
             transform: scale(1.01);
             box-shadow: 3px 3px 16px 9px rgba(0, 0, 0, 0.1);
@@ -70,13 +70,14 @@ const CardImg = styled.img`
         object-fit: contain;
     }
 `
-function CardAlone ({ projet }) {
+
+function CardAlone ({ project }) {
     return (
-        <CardLink href={projet.link} target="_blank">
+        <CardLink href={project.link} target="_blank">
             <CardContainer>
-                <CardImg src={`${import.meta.env.BASE_URL}${projet.picture}`} alt={projet.name}/>
+                <CardImg src={`${import.meta.env.BASE_URL}${project.picture}`} alt={project.name}/>
                 <CardContent>
-                    {projet.technos.map((techno, index) => (
+                    {project.technos.map((techno, index) => (
                         <Logo key={index} className={techno}/>
                     ))}
                 </CardContent>
@@ -86,7 +87,7 @@ function CardAlone ({ projet }) {
 };
 
 CardAlone.propTypes = {
-    projet: PropTypes.shape({
+    project: PropTypes.shape({
         link: PropTypes.string,
         picture: PropTypes.string,
         name: PropTypes.string,

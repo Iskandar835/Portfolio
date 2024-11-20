@@ -10,8 +10,8 @@ const ContactContainer = styled.nav`
     position: relative;
     z-index: 2;
     gap: 80px;
-    background-color: #FFFFFF;
     padding: 18px 25px;
+    background-color: var(--first-bg-color);
     border-radius: 50px;
     box-shadow: 0px 1px 10px 8px #00000038;
     overflow: hidden;

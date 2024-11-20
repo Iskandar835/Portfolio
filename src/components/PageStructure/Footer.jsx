@@ -9,10 +9,10 @@ import { devices } from "../../helpers/Breakpoints";
 const FooterSection = styled.footer`
     margin: 200px 0 0 0;
     padding: 80px 60px 20px 60px;
-    color: #FFFFFF;
-    background-color: #000000;
-    border-radius: 170px 170px 0 0;
+    color: var(--secondary-font-color);
     text-align: center;
+    background-color: var(--secondary-bg-color);
+    border-radius: 170px 170px 0 0;
     @media ${devices.tabs} {
         margin: 150px 0 0 0;
     }
@@ -25,25 +25,18 @@ const FooterSection = styled.footer`
 const BothSection = styled.div`
     display: flex;
     margin-bottom: 120px;
-    @media ${devices.tabs} {
+    @media ${devices.tabsAndMobile} {
         flex-direction: column;
-        margin-bottom: 90px;
-    }
-    @media ${devices.mobile} {
-        flex-direction: column;
-        margin-bottom: 90px;
+        margin-bottom: 90px;               
     }
 `
 const FirstSection = styled.div`
 `
 const SecondSection = styled.div`
     margin-top: 120px;
-    @media ${devices.tabs} {
+    @media ${devices.tabsAndMobile} {
         margin-top: 50px;
-    }
-    @media ${devices.mobile} {
-        margin-top: 50px;
-    }
+    }                                  
 `
 const ContactIndication = styled.p`
     display: flex;

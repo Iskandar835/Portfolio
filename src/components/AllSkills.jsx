@@ -8,7 +8,7 @@ const Container = styled.div`
     position: relative;
     width: 280px;
     height: 280px;
-     @media ${devices.tabs} {
+    @media ${devices.tabs} {
         transform: scale(0.8);
     }
     @media ${devices.mobile} {

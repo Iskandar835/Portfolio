@@ -14,25 +14,25 @@ const Btn = styled.a`
     gap: 7px;
     padding: 8px;
     height: 12px;
-    color: #000000;
-    font-family: "Poppins", sans-serif;
+    color: var(--first-font-color);
+    font-family: var(--title-font-family);
     font-size: 15px;
     font-weight: 500;
-    background: #E9C2EC; 
-    border-radius: 5px;
     text-decoration: none;
+    background: var(--secondary-color); 
+    border-radius: 5px;
     transition: background 150ms ease-in;
-    @media (min-width: 320px) and (max-width: 1024px) {
-        &:active {
-        background: #CF91D8;
+    @media ${devices.onlyComputeur} {
+        &:hover {
+            background: var(--tertiary-color);
             ${Span} {
                 text-decoration: underline;
             }
         }
     }
-    @media (min-width: 1025px) {
-        &:hover {
-        background: #CF91D8;
+    @media ${devices.tabsAndMobile} {
+        &:active {
+            background: var(--tertiary-color);
             ${Span} {
                 text-decoration: underline;
             }
