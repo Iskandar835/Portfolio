@@ -32,6 +32,25 @@ export const Titleh2 = styled.h2`
         text-wrap: wrap;
     }
 `
+const ProjectDescprition = styled.div`
+    display: flex;
+    padding: 0 180px;
+    margin-bottom: 80px;
+    text-align: center;
+    @media ${devices.tabs} {
+        padding: 0 80px;
+    }
+    @media ${devices.mobile} {
+        padding: 0 35px;
+    }
+`
+const Text = styled.p`
+    margin: 0;
+    font-size: 20px;
+    @media ${devices.mobile} {
+        font-size: 18px;
+    }
+`
 const AllCards = styled.div`
     display: flex;
     justify-content: center;
@@ -52,6 +71,14 @@ function Projects () {
     return (
         <ProjectSection>
             <Titleh2>Mes <Span>projets</Span></Titleh2>
+            <ProjectDescprition>
+                <Text>
+                    Le premier projet, SHAPERZ, est un site qui vous permet de concevoir votre 
+                    planche sur mesure. Le deuxième, Oh My Food, est un site gourmand qui éveillera 
+                    votre appétit ! Enfin, le troisième, Kasa, est un site qui vous donnera des 
+                    envies d&apos;évasion et de vacances.
+                </Text>
+            </ProjectDescprition>
             <AllCards>
                 {Data.projects.map((item) => (
                     <CardAlone key={item.id} project={item}/>
