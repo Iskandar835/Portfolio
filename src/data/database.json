@@ -8,9 +8,9 @@
         },
         {
             "id": 2,
-            "name": "Whatsapp",
-            "link": "#",
-            "icon": "fa-brands fa-whatsapp"
+            "name": "Discord",
+            "link": "https://discordapp.com/users/1167449314218487818",
+            "icon": "fa-brands fa-discord"
         },
         {
             "id": 3,

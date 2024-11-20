@@ -37,7 +37,7 @@ function HideSection ({ isVisible }) {
     return (
         <ContactContainer $isVisible={isVisible}>
             {Data.contact.map((contactItem) => (
-                <ContactLogo key={contactItem.id} className={contactItem.icon} link={contactItem.link} />
+                <ContactLogo key={contactItem.id} link={contactItem.link} ariaLabel={contactItem.name} className={contactItem.icon}/>
             ))}
         </ContactContainer>
     )

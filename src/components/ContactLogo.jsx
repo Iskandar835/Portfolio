@@ -45,17 +45,18 @@ const IconLogo = styled.i`
     }
 `
 
-function ContactLogo ({ link, className }) {
+function ContactLogo ({ link, className, ariaLabel }) {
     return (
         <DivIcon>
-            <LinkLogo href={link} target="_blank"><IconLogo className={className}/></LinkLogo>
+            <LinkLogo href={link} target="_blank" aria-label={ariaLabel}><IconLogo className={className}/></LinkLogo>
         </DivIcon>
     )
 };
 
 ContactLogo.propTypes = {
     link: PropTypes.string,
-    className: PropTypes.string
+    className: PropTypes.string,
+    ariaLabel: PropTypes.string
 };
 
 export default ContactLogo;
