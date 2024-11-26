@@ -24,6 +24,7 @@ const ContactContainer = styled.nav`
         bottom: 0;
         left: ${(props) => (props.$isVisible ? '0px' : '405px')};
         backdrop-filter: blur(35px);
+        --webkit-backdrop-filter: blur(35px);
         border-radius: 50px;
         transition: left 200ms ease-in-out;
     }

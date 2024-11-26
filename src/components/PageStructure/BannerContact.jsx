@@ -41,6 +41,7 @@ const Overlay = styled.div`
     height: 100%;
     background-color: rgba(255, 255, 255, 0.6); 
     backdrop-filter: blur(2px);
+    --webkit-backdrop-filter: blur(2px);
 `
 const TextAndBtn = styled.div`
     position: relative;
