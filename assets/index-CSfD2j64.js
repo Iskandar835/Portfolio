@@ -411,9 +411,7 @@ Error generating stack: `+i.message+`
         right: 0;
         bottom: 0;
         left: ${e=>e.$isVisible?"0px":"405px"};
-        background: rgba(251, 251, 251, 0.6)!important; 
-        --webkit-backdrop-filter: blur(35px)!important;
-        backdrop-filter: blur(35px)!important;
+        background: var(--primary-color);
         border-radius: 50px;
         transition: left 200ms ease-in-out;
     }
@@ -434,8 +432,18 @@ Error generating stack: `+i.message+`
     flex-direction: column;
     align-items: center;
     padding: 200px 200px 50px 200px;
-    background-color: var(--primary-color);
-    background: url("assets/doodle-items.avif");
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url("assets/doodle-items.avif"); 
+        background-color: rgba(255, 255, 255, 0.6)!important;
+        filter: blur(2px);
+        z-index: 0;
+    }
     @media ${$.tabs} {
         padding: 150px 80px 50px 80px;
         text-align: center;
@@ -445,16 +453,6 @@ Error generating stack: `+i.message+`
         text-align: center;
     }
 `,B0=T.div`
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.6)!important; 
-    --webkit-backdrop-filter: blur(2px)!important;
-    backdrop-filter: blur(2px)!important;
-`,V0=T.div`
     position: relative;
     z-index: 2;
     display: flex;
@@ -468,12 +466,12 @@ Error generating stack: `+i.message+`
         flex-direction: column;
         margin: 0 0 50px 0;
     }
-`,H0=T.div`
+`,V0=T.div`
     width: 60%;
     @media ${$.tabsAndMobile} {
         width: auto;
     }                      
-`,W0=T.h1`
+`,H0=T.h1`
     margin: 0;
     font-family: var(--title-font-family);
     font-size: 45px;
@@ -485,7 +483,7 @@ Error generating stack: `+i.message+`
         font-size: 25px;
         text-wrap: wrap;
     }
-`,Q0=T(ls)`
+`,W0=T(ls)`
     margin: 0;
     text-align: left;
     @media ${$.tabsAndMobile} {
@@ -500,7 +498,7 @@ Error generating stack: `+i.message+`
         margin: 30px 0 40px 0;
         font-size: 18px;
     }
-`,Y0=T.div`
+`,Q0=T.div`
     margin: 80px 0 0 0;
     @media ${$.tabs} {
         margin: 35px 0 0 0;
@@ -508,9 +506,9 @@ Error generating stack: `+i.message+`
     @media ${$.mobile} {
         margin: 0;
     }
-`;function K0(){const[e,t]=rn.useState(!0),n=()=>{t(r=>!r)};return C.jsxs(U0,{children:[C.jsx(B0,{}),C.jsxs(V0,{children:[C.jsxs(H0,{children:[C.jsx(W0,{children:"Sacha Vandermoeten"}),C.jsxs(Q0,{children:["Developpeur ",C.jsx(us,{children:"Frontend"})]}),C.jsx(Td,{children:"Je suis passionné par la conception d'interfaces modernes, esthétiques et faciles à utiliser. J’aime concevoir des expériences utilisateur agréables en m'appuyant sur des technologies actuelles, en m’assurant que chaque projet est bien structuré, optimisé et intuitif."}),C.jsx(_d,{children:"Vous souhaitez me contacter ?"})]}),C.jsx(Y0,{children:C.jsx($d,{onClick:n,content:"Cliquez Ici !"})})]}),C.jsx(zd,{isVisible:e})]})}const ru=T.span`
+`;function Y0(){const[e,t]=rn.useState(!0),n=()=>{t(r=>!r)};return C.jsxs(U0,{children:[C.jsxs(B0,{children:[C.jsxs(V0,{children:[C.jsx(H0,{children:"Sacha Vandermoeten"}),C.jsxs(W0,{children:["Developpeur ",C.jsx(us,{children:"Frontend"})]}),C.jsx(Td,{children:"Je suis passionné par la conception d'interfaces modernes, esthétiques et faciles à utiliser. J’aime concevoir des expériences utilisateur agréables en m'appuyant sur des technologies actuelles, en m’assurant que chaque projet est bien structuré, optimisé et intuitif."}),C.jsx(_d,{children:"Vous souhaitez me contacter ?"})]}),C.jsx(Q0,{children:C.jsx($d,{onClick:n,content:"Cliquez Ici !"})})]}),C.jsx(zd,{isVisible:e})]})}const ru=T.span`
     text-decoration: none;
-`,G0=T.a`
+`,K0=T.a`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -545,12 +543,12 @@ Error generating stack: `+i.message+`
         height: 10px;
         font-size: 12px;
     }
-`,X0=T(wd)`
+`,G0=T(wd)`
         font-size: 15px;
-`;function Po({href:e,className:t,content:n}){return C.jsx(C.Fragment,{children:C.jsxs(G0,{href:e,target:"_blank",children:[C.jsx(X0,{className:t}),C.jsx(ru,{children:n})]})})}Po.propTypes={href:oe.string,className:oe.string,content:oe.string};const Z0=T.div`
+`;function Po({href:e,className:t,content:n}){return C.jsx(C.Fragment,{children:C.jsxs(K0,{href:e,target:"_blank",children:[C.jsx(G0,{className:t}),C.jsx(ru,{children:n})]})})}Po.propTypes={href:oe.string,className:oe.string,content:oe.string};const X0=T.div`
     display: flex;
     justify-content: center;
-`,J0=T.p`
+`,Z0=T.p`
     display: flex;
     align-items: center;
     gap: 5px;
@@ -559,7 +557,7 @@ Error generating stack: `+i.message+`
     @media ${$.mobile} {
         font-size: 11px;
     }
-`;function q0(){return C.jsx(Z0,{children:C.jsxs(J0,{children:[C.jsx("i",{className:"fa-regular fa-copyright"}),"Non je rigole, tu peux copier si tu veux."]})})}const b0=T.footer`
+`;function J0(){return C.jsx(X0,{children:C.jsxs(Z0,{children:[C.jsx("i",{className:"fa-regular fa-copyright"}),"Non je rigole, tu peux copier si tu veux."]})})}const q0=T.footer`
     margin: 200px 0 0 0;
     padding: 80px 60px 20px 60px;
     color: var(--secondary-font-color);
@@ -574,20 +572,20 @@ Error generating stack: `+i.message+`
         padding: 50px 30px 20px 30px;
         border-radius: 80px 80px 0 0;
     }
-`,e1=T.div`
+`,b0=T.div`
     display: flex;
     margin-bottom: 120px;
     @media ${$.tabsAndMobile} {
         flex-direction: column;
         margin-bottom: 90px;               
     }
+`,e1=T.div`
 `,t1=T.div`
-`,n1=T.div`
     margin-top: 120px;
     @media ${$.tabsAndMobile} {
         margin-top: 50px;
     }                                  
-`,r1=T.p`
+`,n1=T.p`
     display: flex;
     justify-content: center;
     align-items: baseline;
@@ -597,7 +595,7 @@ Error generating stack: `+i.message+`
     @media ${$.mobile} {
         font-size: 15px;
     }
-`;function o1(){const e=Ci.contact;return C.jsxs(b0,{children:[C.jsxs(e1,{children:[C.jsx(t1,{children:C.jsx(Pd,{children:"Vous souhaitez me contacter pour une éventuelle collaboration ?"})}),C.jsx(n1,{children:C.jsxs(r1,{children:["Je partage du contenu qui m'inspire sur ",C.jsx(Po,{href:e[0].link,className:e[0].icon,content:e[0].name}),"et je suis également actif sur ",C.jsx(Po,{href:e[1].link,className:e[1].icon,content:e[1].name}),"et",C.jsx(Po,{href:e[2].link,className:e[2].icon,content:e[2].name}),"pour partager d'autres projets passionnants."]})})]}),C.jsx(q0,{})]})}function i1(){return C.jsxs(C.Fragment,{children:[C.jsx(u0,{}),C.jsxs("main",{children:[C.jsx(K0,{}),C.jsx(E0,{}),C.jsx(I0,{})]}),C.jsx(o1,{})]})}const l1=n0` 
+`;function r1(){const e=Ci.contact;return C.jsxs(q0,{children:[C.jsxs(b0,{children:[C.jsx(e1,{children:C.jsx(Pd,{children:"Vous souhaitez me contacter pour une éventuelle collaboration ?"})}),C.jsx(t1,{children:C.jsxs(n1,{children:["Je partage du contenu qui m'inspire sur ",C.jsx(Po,{href:e[0].link,className:e[0].icon,content:e[0].name}),"et je suis également actif sur ",C.jsx(Po,{href:e[1].link,className:e[1].icon,content:e[1].name}),"et",C.jsx(Po,{href:e[2].link,className:e[2].icon,content:e[2].name}),"pour partager d'autres projets passionnants."]})})]}),C.jsx(J0,{})]})}function o1(){return C.jsxs(C.Fragment,{children:[C.jsx(u0,{}),C.jsxs("main",{children:[C.jsx(Y0,{}),C.jsx(E0,{}),C.jsx(I0,{})]}),C.jsx(r1,{})]})}const i1=n0` 
     :root {
         --primary-color: #F9F9F9;
         --secondary-color: #CF91D8;
@@ -619,4 +617,4 @@ Error generating stack: `+i.message+`
         color: var(--first-font-color);
         background-color: var(--primary-color);
     }
-`;Wf(document.getElementById("root")).render(C.jsxs(rn.StrictMode,{children:[C.jsx(l1,{}),C.jsx(i1,{})]}));
+`;Wf(document.getElementById("root")).render(C.jsxs(rn.StrictMode,{children:[C.jsx(i1,{}),C.jsx(o1,{})]}));
