@@ -21,8 +21,18 @@ const ContactSection = styled.section`
     flex-direction: column;
     align-items: center;
     padding: 200px 200px 50px 200px;
-    background-color: var(--primary-color);
-    background: url("assets/doodle-items.avif");
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url("assets/doodle-items.avif"); 
+        background-color: rgba(255, 255, 255, 0.6)!important;
+        filter: blur(2px);
+        z-index: 0;
+    }
     @media ${devices.tabs} {
         padding: 150px 80px 50px 80px;
         text-align: center;
@@ -31,17 +41,6 @@ const ContactSection = styled.section`
         padding: 100px 30px 50px 30px;
         text-align: center;
     }
-`
-const Overlay = styled.div`
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.6)!important; 
-    --webkit-backdrop-filter: blur(2px)!important;
-    backdrop-filter: blur(2px)!important;
 `
 const TextAndBtn = styled.div`
     position: relative;
@@ -112,7 +111,6 @@ function BannerContact () {
 
     return (
         <ContactSection>
-            <Overlay/>
             <TextAndBtn>
                 <TextContainer>
                     <Title>Sacha Vandermoeten</Title>
