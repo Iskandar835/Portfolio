@@ -23,8 +23,9 @@ const ContactContainer = styled.nav`
         right: 0;
         bottom: 0;
         left: ${(props) => (props.$isVisible ? '0px' : '405px')};
-        backdrop-filter: blur(35px);
-        --webkit-backdrop-filter: blur(35px);
+        background: rgba(251, 251, 251, 0.6)!important; 
+        --webkit-backdrop-filter: blur(35px)!important;
+        backdrop-filter: blur(35px)!important;
         border-radius: 50px;
         transition: left 200ms ease-in-out;
     }
