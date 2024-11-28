@@ -411,6 +411,7 @@ Error generating stack: `+i.message+`
         right: 0;
         bottom: 0;
         left: ${e=>e.$isVisible?"0px":"405px"};
+        background: rgba(251, 251, 251, 0.6)!important; 
         --webkit-backdrop-filter: blur(35px)!important;
         backdrop-filter: blur(35px)!important;
         border-radius: 50px;
@@ -450,7 +451,7 @@ Error generating stack: `+i.message+`
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.6); 
+    background: rgba(255, 255, 255, 0.6)!important; 
     --webkit-backdrop-filter: blur(2px)!important;
     backdrop-filter: blur(2px)!important;
 `,V0=T.div`
