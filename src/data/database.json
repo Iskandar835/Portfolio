@@ -1,76 +1,67 @@
 {
-    "contact": [
-        {
-            "id": 1,
-            "name": "LinkedIn",
-            "link": "https://www.linkedin.com/in/sacha-vandermoeten-57124631b/",
-            "icon": "fa-brands fa-linkedin-in"
-        },
-        {
-            "id": 2,
-            "name": "Discord",
-            "link": "https://discordapp.com/users/1167449314218487818",
-            "icon": "fa-brands fa-discord"
-        },
-        {
-            "id": 3,
-            "name": "Github",
-            "link": "https://github.com/Iskandar835",
-            "icon": "fa-brands fa-github"
-        }
-    ],
-    "projects": [
-        {
-            "id": 1,
-            "name": "Shaperz",
-            "link": "https://github.com/Iskandar835/Shaperz",
-            "picture": "assets/macbook-shaperz.png",
-            "technos": [
-                "fa-brands fa-sass", 
-                "fa-brands fa-js"
-            ]
-        },
-        {
-            "id":2,
-            "name": "Oh My Food ",
-            "link": "https://github.com/Iskandar835/Oh-My-Food",
-            "picture": "assets/iphone-ohmyfood.png",
-            "technos": [
-                "fa-brands fa-html5",
-                "fa-brands fa-sass"
-            ]
-        },
-        {
-            "id":3,
-            "name": "kasa",
-            "link": "https://github.com/Iskandar835/Kasa",
-            "picture": "assets/iphone-kasa.png",
-            "technos": [
-                "fa-brands fa-css3",
-                "fa-brands fa-react"
-            ]
-        }
-    ],
-    "skills": [
-        {
-            "id": 1,
-            "source":"assets/logo-html.png",
-            "alt":"Logo HTML"
-        },
-        {
-            "id": 2,
-            "source":"assets/logo-css.png",
-            "alt":"Logo CSS"
-        },
-        {
-            "id": 3,
-            "source":"assets/logo-javascript.jpg",
-            "alt":"Logo javaScript"
-        },
-        {
-            "id": 4,
-            "source":"assets/logo-react.png",
-            "alt":"Logo REACT"
-        }
-    ]
+  "contact": [
+    {
+      "id": 1,
+      "name": "LinkedIn",
+      "link": "https://www.linkedin.com/in/sacha-vandermoeten-57124631b/",
+      "icon": "fa-brands fa-linkedin-in"
+    },
+    {
+      "id": 2,
+      "name": "Discord",
+      "link": "https://discordapp.com/users/1167449314218487818",
+      "icon": "fa-brands fa-discord"
+    },
+    {
+      "id": 3,
+      "name": "Github",
+      "link": "https://github.com/Iskandar835",
+      "icon": "fa-brands fa-github"
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "name": "Shaperz",
+      "link": "https://github.com/Iskandar835/Shaperz",
+      "picture": "assets/macbook-shaperz.png",
+      "technos": ["fa-brands fa-sass", "fa-brands fa-js"]
+    },
+    {
+      "id": 2,
+      "name": "BEEBOX",
+      "link": "https://github.com/Iskandar835/BEEBOX",
+      "picture": "assets/iphone-beebox.png",
+      "technos": ["fa-brands fa-css3", "fa-brands fa-react"]
+    },
+    {
+      "id": 3,
+      "name": "kasa",
+      "link": "https://github.com/Iskandar835/Kasa",
+      "picture": "assets/iphone-kasa.png",
+      "technos": ["fa-brands fa-css3", "fa-brands fa-react"]
+    }
+  ],
+  "skills": [
+    {
+      "id": 1,
+      "source": "assets/logo-html.png",
+      "alt": "Logo HTML"
+    },
+    {
+      "id": 2,
+      "source": "assets/logo-css.png",
+      "alt": "Logo CSS"
+    },
+    {
+      "id": 3,
+      "source": "assets/logo-javascript.jpg",
+      "alt": "Logo javaScript"
+    },
+    {
+      "id": 4,
+      "source": "assets/logo-react.png",
+      "alt": "Logo REACT"
+    }
+  ]
 }
